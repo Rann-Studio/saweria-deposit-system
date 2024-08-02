@@ -1,0 +1,6 @@
+node_modules
+package-lock.json
+.env
+/prisma/migrations
+/prisma/*.db
+/prisma/*.db-journal
