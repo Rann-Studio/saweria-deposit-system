@@ -18,7 +18,7 @@ model Deposit {
     id        Int      @id @default(autoincrement())
     token     String   @unique
     amount    Float
-    status    String   @default("pending") // pending, completed, failed
+    status    String   @default("pending") // pending, completed
     createdAt DateTime @default(now())
     userId    Int
     User      User     @relation(fields: [userId], references: [id])
